@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es" data-t="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070B16">
+<meta name="description" content="Recarga diamantes y monedas de Free Fire, Call of Duty Mobile, PUBG Mobile y Roblox pagando en CUP, USDT o saldo móvil.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 200 200%27%3E%3Cpolygon points=%2720,70 60,30 140,30 180,70 100,180%27 fill=%27%235CE1FF%27/%3E%3Cpolygon points=%27100,180 180,70 120,70%27 fill=%27%236A4FE0%27/%3E%3C/svg%3E">
+<title>Diamond CUB: recargas de videojuegos en Cuba</title>
+<style>
+:root{color-scheme:dark;--bg:#070B16;--s1:#0E1630;--s2:#16224A;--ln:#243462;--tx:#EAF0FF;--mu:#92A3CC;--go:#FFC247;--r:20px}
+[data-t=light]{color-scheme:light;--bg:#EEF2FF;--s1:#FFFFFF;--s2:#E3EAFF;--ln:#D3DCF5;--tx:#0B1330;--mu:#566692;--go:#A86A00}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--tx);font:16px/1.5 "Avenir Next","Segoe UI",Roboto,system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+:focus-visible{outline:2px solid #5CE1FF;outline-offset:3px}
+.ic{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.app{width:min(600px,100%);margin:0 auto;padding:0 14px calc(120px + env(safe-area-inset-bottom))}
+.hd{position:sticky;top:0;z-index:20;padding:calc(10px + env(safe-area-inset-top)) 0 10px;background:linear-gradient(var(--bg) 75%,transparent)}
+.bar{display:flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid var(--ln);border-radius:999px;background:var(--s1)}
+.logo{flex:1;display:flex;align-items:center;gap:8px;font-weight:900;font-size:19px;letter-spacing:-.03em;min-width:0;white-space:nowrap}
+.logo svg{width:30px;height:30px;flex:none}
+.ib{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--s2);font-size:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 20px;border-radius:999px;font-weight:700;transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.sm{min-height:40px;padding:0 16px}
+.pri{background:linear-gradient(120deg,#5CE1FF,#8B5CF6);color:#06101F}
+.ghost{background:var(--s2);border:1px solid var(--ln)}
+.wh{background:#fff;color:#0B1330}
+h2{font-size:1.25rem;font-weight:850;letter-spacing:-.02em;margin:26px 0 12px;padding-left:12px;border-left:4px solid #5CE1FF;line-height:1.2}
+h1.t{font-size:1.6rem;font-weight:900;letter-spacing:-.03em;margin:18px 0 4px}
+.mu{color:var(--mu)}
+.bn{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;border-radius:var(--r);scrollbar-width:none}
+.bn::-webkit-scrollbar{display:none}
+.sl{position:relative;flex:0 0 100%;scroll-snap-align:center;min-height:190px;padding:22px;border-radius:var(--r);color:#fff;overflow:hidden;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:6px}
+.sl b{font-size:1.45rem;line-height:1.1;letter-spacing:-.03em;max-width:58%;font-weight:900;position:relative}
+.sl span{max-width:56%;opacity:.92;font-size:.95rem;margin-bottom:8px;position:relative}
+.sl .btn{position:relative}
+.sl>svg{position:absolute;right:-8px;bottom:6px;width:150px;height:150px;transform:rotate(8deg);animation:fl 6s ease-in-out infinite}
+@keyframes fl{50%{translate:0 -10px}}
+.dots{display:flex;justify-content:center;gap:6px;margin-top:10px}
+.dots i{width:7px;height:7px;border-radius:50%;background:var(--ln);transition:width .2s,background .2s}
+.dots i.on{width:22px;border-radius:99px;background:#5CE1FF}
+.car{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 8px;scrollbar-width:none}
+.car::-webkit-scrollbar{display:none}
+.tile{flex:0 0 138px;scroll-snap-align:start;padding:16px;border-radius:var(--r);background:var(--s1);border:1px solid var(--ln);text-align:left}
+.tile i{font-style:normal;font-size:32px;display:block;width:56px;height:56px;line-height:56px;text-align:center;border-radius:16px;background:color-mix(in srgb,var(--ac) 22%,transparent);margin-bottom:10px}
+.tile b{display:block;line-height:1.2}
+.tile small{color:var(--mu)}
+.tile[aria-selected=true]{border-color:var(--ac);box-shadow:0 10px 28px -14px var(--ac)}
+.box{border:1px solid var(--ln);border-radius:var(--r);background:var(--s1);overflow:hidden}
+.row{display:flex;align-items:center;gap:12px;padding:14px 16px;border-top:1px solid var(--ln)}
+.row:first-child{border-top:0}
+.row>div{flex:1;min-width:0}
+.row strong{display:block;line-height:1.25}
+.row small{color:var(--mu)}
+.price{font-weight:800;color:var(--go);font-variant-numeric:tabular-nums;white-space:nowrap}
+.row .btn{min-height:40px;padding:0 16px}
+input,select{display:block;width:100%;margin-top:6px;min-height:46px;padding:0 14px;border-radius:14px;border:1px solid var(--ln);background:var(--bg);color:var(--tx);font:inherit;font-size:16px}
+label{display:block;margin-top:14px;color:var(--mu);font-weight:600;font-size:.92rem}
+.srch{margin:0 0 14px}
+.steps{list-style:none;counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:14px;padding:14px 16px;border-top:1px solid var(--ln)}
+.steps li:first-child{border-top:0}
+.steps li::before{content:counter(s);flex:none;width:34px;height:34px;border-radius:50%;background:linear-gradient(120deg,#5CE1FF,#8B5CF6);color:#06101F;font-weight:900;display:grid;place-items:center}
+.steps span{display:block;color:var(--mu);font-size:.92rem}
+.bal{padding:22px;border-radius:var(--r);background:linear-gradient(135deg,#1B2C7A,#6D3FE0);color:#fff}
+.bal b{display:block;font-size:2.2rem;letter-spacing:-.03em;line-height:1.1;margin:4px 0 14px}
+.empty{padding:28px 18px;text-align:center;color:var(--mu)}
+.empty .btn{margin-top:14px}
+.chk{list-style:none}
+.chk li{padding:12px 16px 12px 44px;position:relative;border-top:1px solid var(--ln)}
+.chk li:first-child{border-top:0}
+.chk li::before{content:"✓";position:absolute;left:16px;color:#2BC7E8;font-weight:900}
+details{border-top:1px solid var(--ln);padding:14px 16px}
+details:first-of-type{border-top:0}
+summary{cursor:pointer;font-weight:700;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:#2BC7E8;font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"−"}
+details p{margin-top:8px;color:var(--mu)}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.legal{margin-top:22px;color:var(--mu);font-size:.85rem}
+.nav{position:fixed;z-index:30;left:50%;translate:-50% 0;bottom:calc(12px + env(safe-area-inset-bottom));width:min(572px,calc(100% - 20px));display:flex;gap:2px;padding:7px;border:1px solid var(--ln);border-radius:28px;background:var(--s1);box-shadow:0 12px 40px -10px rgba(0,0,0,.5)}
+.nav a{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 0;border-radius:22px;color:var(--mu);font-size:.72rem;font-weight:600;transition:flex .25s,background .25s}
+.nav a.on{flex:1.5;background:linear-gradient(135deg,#5CE1FF,#8B5CF6);color:#06101F}
+dialog{margin:auto;width:min(420px,92vw);padding:24px;border:1px solid var(--ln);border-radius:24px;background:var(--s1);color:var(--tx)}
+dialog::backdrop{background:rgba(3,6,14,.72)}
+dialog h3{font-size:1.4rem;letter-spacing:-.02em}
+.tot{display:flex;justify-content:space-between;margin:18px 0 14px;font-weight:700}
+.acts{display:flex;gap:10px;margin-top:16px}
+.acts .btn{flex:1}
+#t{position:fixed;left:50%;translate:-50% 0;bottom:calc(100px + env(safe-area-inset-bottom));max-width:92vw;padding:12px 18px;border-radius:14px;background:var(--s2);border:1px solid #5CE1FF;z-index:99;opacity:0;pointer-events:none;transition:opacity .25s}
+#t.on{opacity:1}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="hd"><div class="bar">
+  <a class="logo" href="#inicio"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#dm"/></svg>Diamond CUB</a>
+  <a class="ib" href="#wallet" aria-label="Wallet"><svg class="ic"><use href="#i-w"/></svg></a>
+  <button class="btn ghost sm" id="login">Acceder</button>
+  <button class="ib" id="th" aria-label="Cambiar tema"></button>
+</div></header>
+
+<main>
+<section id="v-inicio">
+  <div class="bn" id="bn">
+    <div class="sl" style="background:linear-gradient(135deg,#16206B 35%,#7B45E8)"><b>Sin tarjeta internacional</b><span>Paga en CUP, USDT o saldo móvil.</span><a class="btn wh sm" href="#wallet">Recargar saldo</a><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#dm"/></svg></div>
+    <div class="sl" style="background:linear-gradient(135deg,#6A220B 35%,#F27A2C)"><b>Free Fire Latinoamérica</b><span>Diamantes con solo tu ID de jugador.</span><button class="btn wh sm" data-pick="0">Ver paquetes</button><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#dm"/></svg></div>
+    <div class="sl" style="background:linear-gradient(135deg,#053B52 35%,#1BAAD0)"><b>Si falla, tu saldo vuelve</b><span>Un pedido que no se completa se reembolsa a tu cuenta.</span><a class="btn wh sm" href="#juegos">Ver juegos</a><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#dm"/></svg></div>
+  </div>
+  <div class="dots" id="dots"><i class="on"></i><i></i><i></i></div>
+
+  <h2>Populares</h2>
+  <div class="car" id="pop"></div>
+
+  <h2>Cómo recargar</h2>
+  <ol class="box steps">
+    <li><div><b>Crea tu cuenta</b><span>Con tu correo y una contraseña.</span></div></li>
+    <li><div><b>Recarga tu saldo</b><span>Paga en CUP, USDT o saldo móvil y registra la referencia.</span></div></li>
+    <li><div><b>Compra con tu ID</b><span>Elige el paquete y sigue el estado en Pedidos.</span></div></li>
+  </ol>
+
+  <h2>Compra con tranquilidad</h2>
+  <ul class="box chk">
+    <li>Nunca pedimos la contraseña de tu juego, solo tu ID.</li>
+    <li>Tu saldo y cada movimiento quedan registrados.</li>
+    <li>Si un pedido no se completa, el dinero vuelve a tu saldo.</li>
+    <li>Soporte directo por Telegram y WhatsApp.</li>
+  </ul>
+</section>
+
+<section id="v-juegos" hidden>
+  <h1 class="t">Juegos</h1>
+  <p class="mu" style="margin-bottom:14px">Elige un juego y un paquete. Se paga con tu saldo.</p>
+  <input class="srch" id="q" type="search" placeholder="Buscar juego o paquete" autocomplete="off">
+  <div class="car" id="tiles" role="tablist"></div>
+  <div class="box" id="packs" style="margin-top:12px"></div>
+  <p class="mu" id="dn" style="margin-top:10px;font-size:.85rem">Precios de demostración. Se reemplazan por los reales al conectar la base de datos.</p>
+</section>
+
+<section id="v-wallet" hidden>
+  <h1 class="t">Wallet</h1>
+  <div class="bal"><span>Saldo disponible</span><b id="bal">— CUP</b><button class="btn wh" id="rech">Recargar saldo</button></div>
+  <h2>Métodos de recarga</h2>
+  <div class="box" id="meth"></div>
+  <h2>Movimientos</h2>
+  <div class="box" id="mov"></div><h2>Mis recargas</h2><div class="box" id="dep"></div>
+</section>
+
+<section id="v-pedidos" hidden>
+  <h1 class="t">Pedidos</h1>
+  <div class="box" id="ord"></div>
+</section>
+
+<section id="v-perfil" hidden>
+  <h1 class="t">Perfil</h1>
+  <div class="box" id="prof" style="margin-bottom:6px"></div><div id="adm"></div>
+  <h2>Ayuda</h2>
+  <div class="box">
+    <details><summary>¿Cómo recargo mi saldo?</summary><p>Elige CUP, USDT o saldo móvil, haz el pago y registra la referencia. Revisamos cada recarga y el estado se actualiza en tu cuenta.</p></details>
+    <details><summary>¿Qué pasa si mi pedido no se completa?</summary><p>Lo reembolsamos al saldo de tu cuenta y queda en tus movimientos.</p></details>
+    <details><summary>¿Necesito dar la contraseña del juego?</summary><p>No. Solo tu ID de jugador. Nunca compartas tu contraseña con nadie.</p></details>
+    <details><summary>¿Qué servidor de Free Fire se recarga?</summary><p>Latinoamérica. Comprueba que tu cuenta sea de ese servidor antes de comprar.</p></details>
+  </div>
+  <h2>Contacto</h2>
+  <div class="cta"><a class="btn ghost" href="https://t.me/AleM3107" target="_blank" rel="noopener">Telegram</a><a class="btn ghost" href="https://wa.me/5356799321" target="_blank" rel="noopener">WhatsApp</a></div>
+  <p class="legal">Diamond CUB es una tienda independiente. Free Fire, Call of Duty, PUBG Mobile y Roblox pertenecen a sus respectivos propietarios y no estamos afiliados a ellos.</p>
+</section>
+</main>
+</div>
+
+<nav class="nav" aria-label="Principal">
+  <a id="n-inicio" href="#inicio"><svg class="ic"><use href="#i-h"/></svg>Inicio</a>
+  <a id="n-juegos" href="#juegos"><svg class="ic"><use href="#i-g"/></svg>Juegos</a>
+  <a id="n-wallet" href="#wallet"><svg class="ic"><use href="#i-w"/></svg>Wallet</a>
+  <a id="n-pedidos" href="#pedidos"><svg class="ic"><use href="#i-o"/></svg>Pedidos</a>
+  <a id="n-perfil" href="#perfil"><svg class="ic"><use href="#i-u"/></svg>Perfil</a>
+</nav>
+<dialog id="d"></dialog>
+<div id="t" role="status"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <linearGradient id="gp" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5CE1FF"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient>
+  <g id="dm">
+    <polygon points="20,70 60,30 80,70" fill="#7DEBFF"/><polygon points="60,30 100,30 80,70" fill="#BDF5FF"/>
+    <polygon points="80,70 100,30 120,70" fill="#E6FBFF"/><polygon points="100,30 140,30 120,70" fill="#9AEFFF"/>
+    <polygon points="140,30 180,70 120,70" fill="#4FC3F0"/><polygon points="20,70 80,70 100,180" fill="url(#gp)"/>
+    <polygon points="80,70 120,70 100,180" fill="#6FD3F5"/><polygon points="120,70 180,70 100,180" fill="#6A4FE0"/>
+  </g>
+  <symbol id="i-h" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="i-g" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="11" rx="4"/><path d="M7 10v5M4.5 12.5h5M16 11.5h.01M18.5 14h.01"/></symbol>
+  <symbol id="i-w" viewBox="0 0 24 24"><path d="M3 8a3 3 0 0 1 3-3h12v3"/><rect x="3" y="8" width="18" height="12" rx="3"/><path d="M16 14h.01"/></symbol>
+  <symbol id="i-o" viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></symbol>
+  <symbol id="i-u" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+</defs></svg>
+
+<script>
+const CFG={url:'',key:''};
+const G=[
+{n:'Free Fire',e:'🔥',c:'#FF8A3D',l:'ID de jugador',s:['Latinoamérica'],p:[['110 diamantes',500],['341 diamantes',1500],['572 diamantes',2500]]},
+{n:'Call of Duty Mobile',e:'🎯',c:'#5CE1FF',l:'UID de jugador',s:[],p:[['80 CP',500],['420 CP',2000]]},
+{n:'PUBG Mobile',e:'🪖',c:'#FFC247',l:'ID de personaje',s:[],p:[['60 UC',500],['325 UC',2400]]},
+{n:'Roblox',e:'🧱',c:'#8B5CF6',l:'Usuario de Roblox',s:[],p:[['400 Robux',2500]]}];
+const M=[['Transferencia en CUP','Desde tu tarjeta Bandec u otra cuenta. Registra el número de transacción.'],['USDT en red BEP20','Envía solo por BEP20 y pega el hash de la transacción.'],['Saldo móvil','Recarga el número indicado y registra la referencia.']];
+const T=['inicio','juegos','wallet','pedidos','perfil'];
+const $=s=>document.querySelector(s),fm=n=>n.toLocaleString('es')+' CUP';
+const D=$('#d');let cur=0,tm;
+function toast(m){const t=$('#t');t.textContent=m;t.classList.add('on');clearTimeout(tm);tm=setTimeout(()=>t.classList.remove('on'),3200)}
+function demo(){toast(CFG.url?'Conectando…':'Modo demostración: esta acción se activa al conectar la base de datos.')}
+function tile(g,i,sel){return `<button class="tile" role="tab" aria-selected="${sel}" style="--ac:${g.c}" data-i="${i}"><i>${g.e}</i><b>${g.n}</b><small>${g.p.length} paquetes</small></button>`}
+function drawGames(){
+ const q=$('#q').value.trim().toLowerCase();
+ $('#tiles').innerHTML=G.map((g,i)=>tile(g,i,!q&&i==cur)).join('');
+ const rows=[];G.forEach((g,i)=>g.p.forEach((p,j)=>{if(q?(g.n+' '+p[0]).toLowerCase().includes(q):i==cur)rows.push([g,i,p,j])}));
+ $('#packs').innerHTML=rows.length?rows.map(([g,i,p,j])=>`<div class="row"><div><strong>${p[0]}</strong><small>${g.n}</small></div><span class="price">${fm(p[1])}</span><button class="btn pri" data-b="${i}.${j}">Comprar</button></div>`).join(''):'<p class="empty">No encontramos ese juego o paquete.</p>';
+}
+function show(h){D.innerHTML=h+'<form method="dialog" class="acts"><button class="btn ghost">Cerrar</button></form>';D.showModal()}
+function buy(g,p){
+ show(`<h3>${p[0]}</h3><p class="mu">${g.n}</p>
+ <label>${g.l}<input id="pid" autocomplete="off" maxlength="40"></label>
+ ${g.s.length?`<label>Servidor<select>${g.s.map(s=>`<option>${s}</option>`).join('')}</select></label>`:''}
+ <p class="tot"><span>Total</span><span class="price">${fm(p[1])}</span></p>
+ <button class="btn pri" id="go" style="width:100%">Comprar con mi saldo</button>`);
+ $('#go').onclick=()=>$('#pid').value.trim()?demo():toast('Escribe tu '+g.l.toLowerCase()+'.');
+}
+function login(){
+ show(`<h3>Tu cuenta</h3><p class="mu">Entra o crea una cuenta para comprar.</p>
+ <label>Correo<input type="email" autocomplete="email"></label>
+ <label>Contraseña<input type="password" autocomplete="current-password"></label>
+ <div class="acts"><button class="btn pri" id="in">Entrar</button><button class="btn ghost" id="up">Crear cuenta</button></div>`);
+ $('#in').onclick=$('#up').onclick=demo;
+}
+function recharge(){
+ show(`<h3>Recargar saldo</h3><p class="mu">Paga primero y registra la referencia. Revisamos cada recarga.</p>
+ <label>Método<select>${M.map(m=>`<option>${m[0]}</option>`).join('')}</select></label>
+ <label>Monto enviado<input inputmode="decimal" placeholder="0"></label>
+ <label>Referencia o hash<input autocomplete="off"></label>
+ <button class="btn pri" id="go" style="width:100%;margin-top:18px">Enviar para revisión</button>`);
+ $('#go').onclick=demo;
+}
+function pick(i){cur=i;$('#q').value='';location.hash='juegos';drawGames()}
+function go(){
+ let h=location.hash.slice(1);if(!T.includes(h))h='inicio';
+ T.forEach(t=>{$('#v-'+t).hidden=t!=h;const n=$('#n-'+t);n.classList.toggle('on',t==h);t==h?n.setAttribute('aria-current','page'):n.removeAttribute('aria-current')});
+ scrollTo(0,0);
+}
+function theme(t){document.documentElement.dataset.t=t;$('#th').textContent=t=='dark'?'☀':'☾';document.querySelector('[name=theme-color]').content=t=='dark'?'#070B16':'#EEF2FF';try{localStorage.setItem('t',t)}catch(e){}}
+$('#pop').innerHTML=G.map((g,i)=>tile(g,i,false)).join('');
+$('#meth').innerHTML=M.map(m=>`<div class="row"><div><strong>${m[0]}</strong><small>${m[1]}</small></div></div>`).join('');
+document.addEventListener('click',e=>{
+ const a=e.target.closest('[data-i]'),b=e.target.closest('[data-b]'),p=e.target.closest('[data-pick]'),l=e.target.closest('[data-login]'),td=e.target.closest('[data-todo]');
+ if(a)pick(+a.dataset.i);
+ else if(b){const[i,j]=b.dataset.b.split('.');buy(G[i],G[i].p[j])}
+ else if(p)pick(+p.dataset.pick);
+ else if(l)login();
+ else if(td){e.preventDefault();toast('Enlace de '+td.dataset.todo+' pendiente de configurar.')}
+});
+$('#login').onclick=login;$('#rech').onclick=recharge;
+$('#th').onclick=()=>theme(document.documentElement.dataset.t=='dark'?'light':'dark');
+$('#q').oninput=drawGames;
+const bn=$('#bn'),dots=[...document.querySelectorAll('#dots i')],idx=()=>Math.round(bn.scrollLeft/bn.clientWidth);
+bn.onscroll=()=>dots.forEach((d,k)=>d.classList.toggle('on',k==idx()));
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches)setInterval(()=>{if(document.hidden||$('#v-inicio').hidden)return;bn.scrollTo({left:((idx()+1)%3)*bn.clientWidth,behavior:'smooth'})},5000);
+addEventListener('hashchange',go);
+let st='dark';try{st=localStorage.getItem('t')||'dark'}catch(e){}
+theme(st);drawGames();go();
+</script>
+<script>
+/* Fase 3: conexión con Supabase (sin librerías, solo fetch) */
+Object.assign(CFG,{url:'https://gnqcackdgpbyyqsectrg.supabase.co',key:'sb_publishable_JeVMdYwJm1ymtEleMrRqbw_4y8dw3qS'});
+const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const R=(t,s,r)=>`<div class="row"><div><strong>${t}</strong><small>${s||''}</small></div>${r||''}</div>`;
+const need=t=>`<div class="empty">${t}<br><button class="btn pri" data-login>Acceder</button></div>`;
+const TY={deposito:'Recarga',compra:'Compra',reembolso:'Reembolso',ajuste:'Ajuste'},ST={pendiente:'Pendiente',procesando:'En proceso',completado:'Completado',reembolsado:'Reembolsado',aprobado:'Aprobada',rechazado:'Rechazada'};
+const ES=m=>/Invalid login/i.test(m)?'Correo o contraseña incorrectos.':/already registered/i.test(m)?'Ese correo ya tiene una cuenta.':/at least|weak/i.test(m)?'La contraseña debe tener al menos 6 caracteres.':/duplicate/i.test(m)?'Esa referencia ya fue registrada.':/Failed to fetch|NetworkError/i.test(m)?'Sin conexión. Inténtalo de nuevo.':m;
+let S=null,ME=null,W=null,MET=[];
+try{S=JSON.parse(localStorage.getItem('s'))}catch(e){}
+const save=s=>{S=s;try{s?localStorage.setItem('s',JSON.stringify(s)):localStorage.removeItem('s')}catch(e){}};
+async function api(path,o={}){
+ const h={apikey:CFG.key,'Content-Type':'application/json',...o.h};
+ if(S&&!o.anon)h.Authorization='Bearer '+S.access_token;
+ const r=await fetch(CFG.url+path,{method:o.m||'GET',headers:h,body:o.b?JSON.stringify(o.b):undefined});
+ if(r.status==401&&S&&!o.anon&&!o.retry&&await refresh())return api(path,{...o,retry:1});
+ const t=await r.text(),j=t?JSON.parse(t):null;
+ if(!r.ok)throw new Error(j&&(j.message||j.msg||j.error_description)||'Error '+r.status);
+ return j;
+}
+const rpc=(n,b)=>api('/rest/v1/rpc/'+n,{m:'POST',b});
+async function refresh(){try{save(await api('/auth/v1/token?grant_type=refresh_token',{m:'POST',b:{refresh_token:S.refresh_token},anon:1}));return true}catch(e){save(null);ME=W=null;return false}}
+async function auth(k,email,password){
+ const j=await api(k=='up'?'/auth/v1/signup':'/auth/v1/token?grant_type=password',{m:'POST',b:{email,password},anon:1});
+ if(!j.access_token)throw new Error('Cuenta creada, pero falta confirmar el correo.');
+ save(j);await load();
+}
+async function out(){try{await api('/auth/v1/logout',{m:'POST'})}catch(e){}save(null);ME=W=null;paint();toast('Sesión cerrada.')}
+async function load(){
+ if(S)try{
+  const u=S.user.id;
+  [ME]=await api('/rest/v1/profiles?select=*&id=eq.'+u);
+  [W]=await api('/rest/v1/wallets?select=available&user_id=eq.'+u);
+ }catch(e){ME=W=null}
+ paint();
+}
+function paint(){
+ $('#login').textContent=S?'Salir':'Acceder';
+ $('#bal').textContent=W?fm(W.available):'— CUP';
+ views();
+}
+function views(){
+ const h=location.hash.slice(1);
+ if(h=='wallet')wallet();else if(h=='pedidos')orders();else if(h=='perfil'){prof();admin()}
+}
+const price=p=>p.promo_price_cup&&(!p.promo_ends_at||new Date(p.promo_ends_at)>new Date())?p.promo_price_cup:p.price_cup;
+async function catalog(){
+ try{
+  const gs=await api('/rest/v1/games?select=id,name,id_label,server_options&order=sort_order',{anon:1});
+  const ps=await api('/rest/v1/products?select=id,game_id,name,price_cup,promo_price_cup,promo_ends_at&order=sort_order',{anon:1});
+  if(!gs.length)return;
+  const old=Object.fromEntries(G.map(g=>[g.n,g]));
+  G.length=0;
+  gs.forEach(g=>{const o=old[g.name]||{};G.push({n:g.name,e:o.e||'🎮',c:o.c||'#5CE1FF',l:g.id_label,s:g.server_options||[],p:ps.filter(p=>p.game_id==g.id).map(p=>[p.name,price(p),p.id])})});
+  cur=0;drawGames();$('#pop').innerHTML=G.map((g,i)=>tile(g,i,false)).join('');$('#dn').hidden=true;
+ }catch(e){}
+}
+function buy(g,p){
+ show(`<h3>${E(p[0])}</h3><p class="mu">${E(g.n)}</p>
+ <label>${E(g.l)}<input id="pid" autocomplete="off" maxlength="40"></label>
+ ${g.s.length?`<label>Servidor<select id="srv">${g.s.map(s=>`<option>${E(s)}</option>`).join('')}</select></label>`:''}
+ <p class="tot"><span>Total</span><span class="price">${fm(p[1])}</span></p>
+ <button class="btn pri" id="go" style="width:100%">Comprar con mi saldo</button>`);
+ $('#go').onclick=async e=>{
+  const id=$('#pid').value.trim();
+  if(id.length<3)return toast('Escribe tu '+g.l.toLowerCase()+'.');
+  if(!S){D.close();return login()}
+  if(!p[2])return toast('Catálogo no disponible todavía.');
+  if(W&&W.available<p[1])return toast('Saldo insuficiente. Recarga tu saldo en Wallet.');
+  e.target.disabled=true;
+  try{await rpc('create_order',{p_product_id:p[2],p_player_id:id,p_server:$('#srv')?.value||null});D.close();toast('Pedido creado. Sigue su estado en Pedidos.');await load();location.hash='pedidos'}
+  catch(x){toast(ES(x.message));e.target.disabled=false}
+ };
+}
+function login(){
+ if(S)return;
+ show(`<h3>Tu cuenta</h3><p class="mu">Entra o crea una cuenta para comprar.</p>
+ <label>Correo<input id="em" type="email" autocomplete="email"></label>
+ <label>Contraseña<input id="pw" type="password" autocomplete="current-password"></label>
+ <div class="acts"><button class="btn pri" id="in">Entrar</button><button class="btn ghost" id="up">Crear cuenta</button></div>`);
+ ['in','up'].forEach(k=>$('#'+k).onclick=async e=>{
+  const em=$('#em').value.trim(),pw=$('#pw').value;
+  if(!em||pw.length<6)return toast('Escribe tu correo y una contraseña de 6 o más caracteres.');
+  e.target.disabled=true;
+  try{await auth(k,em,pw);D.close();toast('Listo, ya estás dentro.')}catch(x){toast(ES(x.message))}
+  e.target.disabled=false;
+ });
+}
+function recharge(){
+ if(!S)return login();
+ if(!MET.length)return toast('Los métodos de pago se activarán muy pronto.');
+ show(`<h3>Recargar saldo</h3><p class="mu">Paga primero y registra la referencia. Revisamos cada recarga.</p>
+ <label>Método<select id="mt">${MET.map(m=>`<option value="${m.id}">${E(m.name)}</option>`).join('')}</select></label>
+ <label>Monto enviado<input id="am" inputmode="decimal" placeholder="0"></label>
+ <label>Referencia o hash<input id="rf" autocomplete="off"></label>
+ <button class="btn pri" id="go" style="width:100%;margin-top:18px">Enviar para revisión</button>`);
+ $('#go').onclick=async e=>{
+  const a=parseFloat($('#am').value.replace(',','.')),r=$('#rf').value.trim();
+  if(!(a>0)||r.length<4)return toast('Escribe el monto y la referencia de tu pago.');
+  e.target.disabled=true;
+  try{await api('/rest/v1/deposits',{m:'POST',h:{Prefer:'return=minimal'},b:{user_id:ME.id,method_id:$('#mt').value,declared_amount:a,tx_reference:r}});D.close();toast('Recarga enviada. La revisaremos pronto.');wallet()}
+  catch(x){toast(ES(x.message));e.target.disabled=false}
+ };
+}
+async function wallet(){
+ if(!S){$('#mov').innerHTML=$('#dep').innerHTML=need('Entra a tu cuenta para ver tu saldo y tus recargas.');return}
+ try{
+  const[m,x,d]=await Promise.all([api('/rest/v1/payment_methods?select=*&enabled=eq.true&order=sort_order'),api('/rest/v1/wallet_transactions?select=*&order=created_at.desc&limit=30'),api('/rest/v1/deposits?select=*,payment_methods(name)&order=created_at.desc&limit=10')]);
+  MET=m;
+  $('#meth').innerHTML=m.length?m.map(r=>R(E(r.name),E(r.instructions)+'<br><b>'+E(r.pay_to)+'</b>'+(r.currency=='CUP'?'':' · 1 '+(r.currency=='SALDO'?'CUP de saldo':'USDT')+' = '+r.rate_to_cup+' CUP'))).join(''):'<p class="empty">Los métodos de pago se activarán muy pronto.</p>';
+  $('#mov').innerHTML=x.length?x.map(r=>R(TY[r.type],new Date(r.created_at).toLocaleDateString('es')+(r.note?' · '+E(r.note):''),`<span class="price">${r.amount>0?'+':''}${fm(r.amount)}</span>`)).join(''):'<p class="empty">Aún no tienes movimientos.</p>';
+  $('#dep').innerHTML=d.length?d.map(r=>R(E(r.payment_methods.name)+' · '+r.declared_amount,E(r.tx_reference)+(r.review_note?'<br>'+E(r.review_note):''),`<span class="price">${ST[r.status]}</span>`)).join(''):'<p class="empty">Aún no has enviado recargas.</p>';
+ }catch(e){toast(ES(e.message))}
+}
+async function orders(){
+ if(!S){$('#ord').innerHTML=need('Entra a tu cuenta para ver el estado de tus pedidos.');return}
+ try{
+  const o=await api('/rest/v1/orders?select=*&order=created_at.desc&limit=30');
+  $('#ord').innerHTML=o.length?o.map(r=>R(E(r.product_name),'ID '+E(r.player_id)+' · '+new Date(r.created_at).toLocaleDateString('es')+(r.operator_note?'<br>'+E(r.operator_note):''),`<span class="price">${ST[r.status]}</span>`)).join(''):'<p class="empty">Aún no tienes pedidos.<br><a class="btn pri" href="#juegos">Ver juegos</a></p>';
+ }catch(e){toast(ES(e.message))}
+}
+function prof(){
+ $('#prof').innerHTML=!S?need('Crea tu cuenta para comprar y guardar tu saldo.'):ME?R(E(ME.display_name||'Mi cuenta'),E(S.user.email),`<span class="price">${E(ME.role)}</span>`):'<p class="empty">No se encontró tu perfil. Cierra sesión y vuelve a entrar.</p>';
+}
+async function admin(){
+ const el=$('#adm');
+ if(!ME||!['admin','operador'].includes(ME.role)){el.innerHTML='';return}
+ try{
+  const[d,o]=await Promise.all([ME.role=='admin'?api('/rest/v1/deposits?select=*,payment_methods(name,currency,rate_to_cup),profiles!deposits_user_id_fkey(display_name)&status=eq.pendiente&order=created_at'):[],api('/rest/v1/orders?select=*,profiles(display_name)&status=in.(pendiente,procesando)&order=created_at')]);
+  el.innerHTML='<h2>Recargas por revisar</h2><div class="box">'+(d.length?d.map(r=>`<div class="row"><div><strong>${E(r.profiles.display_name)}: ${r.declared_amount} ${r.payment_methods.currency}</strong><small>${E(r.payment_methods.name)}<br>Ref: ${E(r.tx_reference)}</small><input type="number" value="${Math.round(r.declared_amount*r.payment_methods.rate_to_cup)}" aria-label="CUP a acreditar"></div><button class="btn pri" data-act="ap:${r.id}">Aprobar</button><button class="btn ghost" data-act="rj:${r.id}">No</button></div>`).join(''):'<p class="empty">No hay recargas pendientes.</p>')+'</div><h2>Pedidos por entregar</h2><div class="box">'+(o.length?o.map(r=>`<div class="row"><div><strong>${E(r.product_name)}</strong><small>ID <b>${E(r.player_id)}</b> ${E(r.server||'')}<br>${E(r.profiles.display_name)} · ${ST[r.status]}</small></div><button class="btn pri" data-act="ok:${r.id}">Listo</button><button class="btn ghost" data-act="rf:${r.id}">Reembolsar</button></div>`).join(''):'<p class="empty">No hay pedidos pendientes.</p>')+'</div>';
+ }catch(e){toast(ES(e.message))}
+}
+document.addEventListener('click',async e=>{
+ const b=e.target.closest('[data-act]');if(!b)return;
+ const[a,id]=b.dataset.act.split(':');
+ try{
+  if(a=='ap'){const v=+b.closest('.row').querySelector('input').value;if(!(v>0))return toast('Indica los CUP a acreditar.');if(!confirm('¿Acreditar '+v+' CUP a este cliente?'))return;await rpc('approve_deposit',{p_deposit_id:id,p_credited_cup:v})}
+  else if(a=='rj'){const n=prompt('Motivo del rechazo');if(!n)return;await rpc('reject_deposit',{p_deposit_id:id,p_note:n})}
+  else if(a=='ok')await rpc('set_order_status',{p_order_id:id,p_status:'completado'});
+  else if(a=='rf'){if(!confirm('¿Reembolsar este pedido al saldo del cliente?'))return;await rpc('refund_order',{p_order_id:id})}
+  toast('Hecho.');admin()
+ }catch(x){toast(ES(x.message))}
+});
+$('#login').onclick=()=>S?out():login();
+$('#rech').onclick=recharge;
+addEventListener('hashchange',views);
+catalog();load();
+</script>
+</body>
+</html>
